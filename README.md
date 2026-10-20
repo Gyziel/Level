@@ -1,62 +1,26 @@
-<div align="center">
-
-<img src="assets/readme-banner.svg" width="100%" alt="CnGyZzh Level" />
-
 # Level
 
-**CnGyZzh 的公开活动归档与项目中枢**
+**Gy 的 GitHub 公开活动归档与项目导航。**
 
-[![Profile](https://img.shields.io/badge/Profile-CnGyZzh-181717?logo=github)](https://github.com/CnGyZzh)
-[![Activity](https://img.shields.io/badge/Activity-Auto_Update-2ea44f?logo=githubactions)](activity.txt)
-[![Website](https://img.shields.io/badge/Site-cngyzzh.github.io-4285F4)](https://cngyzzh.github.io)
+[个人主页](https://github.com/Gyziel) · [活动记录](activity.txt) · [工作流](https://github.com/Gyziel/Level/actions)
 
-[活动记录](activity.txt) · [刷新日志](daily_log.txt) · [项目矩阵](#project-matrix) · [Actions](https://github.com/CnGyZzh/Level/actions)
+## 功能
 
-</div>
+每天自动读取 GitHub 公开事件，增量去重后更新记录；没有新事件时跳过提交，减少无效运行。
 
-## What is Level?
+| 内容 | 说明 |
+| --- | --- |
+| [activity.txt](activity.txt) | 最新公开事件记录 |
+| [daily_log.txt](daily_log.txt) | 有新活动时记录更新日期 |
+| [update-activity.yml](.github/workflows/update-activity.yml) | 自动归档的 GitHub Actions 工作流 |
 
-**Level** 是 CnGyZzh 的轻量 GitHub 活动中枢：自动抓取公开事件、保存增量记录，同时作为各项目之间的统一导航页。
+- **定时执行**：每天 02:17 UTC（北京时间 10:17，实际启动可能延迟）。
+- **手动执行**：Actions → Refresh activity logs → Run workflow。
+- **自动验证**：修改工作流配置时触发一次检查；没有新记录就不推送提交。
+- **账户适配**：自动读取当前仓库所有者，不再依赖写死的用户名。
 
-它与 **[CnGyZzh/CnGyZzh](https://github.com/CnGyZzh/CnGyZzh)** 配合：
+## 项目
 
-- **CnGyZzh**：面向访客的主页与项目展示
-- **Level**：公开活动记录、更新日志与项目索引
+[HyperMax](https://github.com/Gyziel/HyperMax) · [WeType Monet](https://github.com/Gyziel/WeType_Monet-Gy) · [ZEEHO Auto Gy](https://github.com/Gyziel/ZEEHO-Auto-Gy) · [GitHub 主页仓库](https://github.com/Gyziel/CnGyZzh)
 
-## Project matrix
-
-| Project | Focus | Links |
-| :--- | :--- | :--- |
-| **HyperMax** | Xiaomi 17 Pro 高刷 / 触控 / 温控调校 | [Repo](https://github.com/CnGyZzh/HyperMax) · [Releases](https://github.com/CnGyZzh/HyperMax/releases) |
-| **WeType Monet** | 微信输入法 Material You / Monet | [Repo](https://github.com/CnGyZzh/WeType_Monet-Gy) · [Releases](https://github.com/CnGyZzh/WeType_Monet-Gy/releases) |
-| **ZEEHO Auto Gy** | 极核自动任务 / GitHub Actions | [Repo](https://github.com/CnGyZzh/ZEEHO-Auto-Gy) |
-| **Profile** | GitHub 个人主页与贡献动画 | [Repo](https://github.com/CnGyZzh/CnGyZzh) |
-| **Website** | 个人站点 / 项目展示 | [Site](https://cngyzzh.github.io) · [Repo](https://github.com/CnGyZzh/CnGyZzh.github.io) |
-
-## Activity archive
-
-| 文件 | 用途 |
-| :--- | :--- |
-| **[activity.txt](activity.txt)** | 公开 GitHub 事件，去重后按新到旧保存 |
-| **[daily_log.txt](daily_log.txt)** | 检测到新活动时记录刷新时间 |
-| **[update-activity.yml](.github/workflows/update-activity.yml)** | 自动抓取、更新与提交 |
-
-### Schedule
-
-- 定时运行：每天 02:17 UTC，即北京时间约 **10:17**
-- 手动运行：Actions → **Refresh activity logs** → **Run workflow**
-- 无新事件时不会生成无意义提交
-
-> GitHub Actions 的 cron 可能因平台负载延迟几分钟。这里保存的是公开事件快照，不等同于贡献日历，也不保证覆盖完整历史。
-
-## Navigation
-
-<div align="center">
-
-**[CnGyZzh](https://github.com/CnGyZzh) · [HyperMax](https://github.com/CnGyZzh/HyperMax) · [WeType Monet](https://github.com/CnGyZzh/WeType_Monet-Gy) · [ZEEHO Auto](https://github.com/CnGyZzh/ZEEHO-Auto-Gy) · [Website](https://cngyzzh.github.io)**
-
-</div>
-
----
-
-<sub>Maintained by Gy · This repository currently has no standalone license declaration.</sub>
+<sub>公开事件快照不等于 GitHub 贡献统计，也不保证完整历史。</sub>
