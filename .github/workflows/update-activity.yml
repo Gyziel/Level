@@ -19,7 +19,7 @@ jobs:
       - name: Refresh public activity records
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_OWNER: CnGyZzh
+          GITHUB_OWNER: ${{ github.repository_owner }}
         run: |
           python3 - <<'PY'
           import json
