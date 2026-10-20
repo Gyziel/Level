@@ -21,6 +21,6 @@
 
 ## 项目
 
-[HyperMax](https://github.com/Gyziel/HyperMax) · [WeType Monet](https://github.com/Gyziel/WeType_Monet-Gy) · [ZEEHO Auto Gy](https://github.com/Gyziel/ZEEHO-Auto-Gy) · [GitHub 主页仓库](https://github.com/Gyziel/CnGyZzh)
+[HyperMax](https://github.com/Gyziel/HyperMax) · [WeType Monet](https://github.com/Gyziel/WeType_Monet-Gy) · [ZEEHO Auto Gy](https://github.com/Gyziel/ZEEHO-Auto-Gy) · [GitHub 主页仓库](https://github.com/Gyziel/Gyziel)
 
 <sub>公开事件快照不等于 GitHub 贡献统计，也不保证完整历史。</sub>
